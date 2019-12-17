@@ -1,3 +1,9 @@
+# compile with opencv3
+if use opencv3, change  outputFile << cv::format(data,"CSV")<<std::endl;
+to  outputFile << format(data,, cv::Formatter::FMT_CSV) << endl;
+in feature_detection.cpp.
+
+
 # SVO_edgelet
 ChangeList， compare with the origin svo:
 1. add edgelete feature
